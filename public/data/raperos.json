@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "nombre": "2Pac",
+    "tipo": "Solista",
+    "origen": "West Coast",
+    "album_destacado": "All Eyez on Me (1996)",
+    "descripcion": "Uno de los raperos más influyentes de todos los tiempos, emblema del West Coast rap y la lírica revolucionaria.",
+    "imagen": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500&q=80"
+  },
+  {
+    "id": 2,
+    "nombre": "The Notorious B.I.G.",
+    "tipo": "Solista",
+    "origen": "East Coast",
+    "album_destacado": "Ready to Die (1994)",
+    "descripcion": "El rey de Nueva York, famoso por su impecable fluidez, complejas estructuras de rimas y estilo narrativo único.",
+    "imagen": "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=500&q=80"
+  },
+  {
+    "id": 3,
+    "nombre": "Wu-Tang Clan",
+    "tipo": "Grupo",
+    "origen": "East Coast",
+    "album_destacado": "Enter the Wu-Tang (36 Chambers) (1993)",
+    "descripcion": "Revolucionario grupo de Staten Island que cambió el sonido del hip-hop con producciones oscuras, crudas y samples de artes marciales.",
+    "imagen": "https://images.unsplash.com/photo-1487180142328-0c4e37023af5?w=500&q=80"
+  },
+  {
+    "id": 4,
+    "nombre": "A Tribe Called Quest",
+    "tipo": "Grupo",
+    "origen": "East Coast",
+    "album_destacado": "The Low End Theory (1991)",
+    "descripcion": "Pioneros del hip-hop alternativo y de la fusión perfecta entre el rap concienzudo y las líneas de bajo de jazz.",
+    "imagen": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500&q=80"
+  },
+  {
+    "id": 5,
+    "nombre": "Nas",
+    "tipo": "Solista",
+    "origen": "East Coast",
+    "album_destacado": "Illmatic (1994)",
+    "descripcion": "Poeta callejero de Queensbridge cuyo álbum debut es considerado unánimemente como la obra maestra lírica del hip-hop.",
+    "imagen": "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=500&q=80"
+  },
+  {
+    "id": 6,
+    "nombre": "DMX",
+    "tipo": "Solista",
+    "origen": "East Coast",
+    "album_destacado": "It's Dark and Hell Is Hot (1998)",
+    "descripcion": "Conocido por su entrega agresiva, voz áspera y letras sumamente emocionales. Devolvió la crudeza callejera al rap comercial a finales de los 90.",
+    "imagen": "https://images.unsplash.com/photo-1524567214260-904714468f5e?w=500&q=80"
+  },
+  {
+    "id": 7,
+    "nombre": "50 Cent",
+    "tipo": "Solista",
+    "origen": "East Coast",
+    "album_destacado": "Power of the Dollar (1999) / Get Rich or Die Tryin' (2003)",
+    "descripcion": "Aunque su éxito masivo llegó a inicios de los 2000, su crudo estilo de mixtape y letras gangsta se forjaron a finales de los 90 en Nueva York.",
+    "imagen": "https://images.unsplash.com/photo-1516280440614-37939bbacd6a?w=500&q=80"
+  },
+  {
+    "id": 8,
+    "nombre": "N.W.A",
+    "tipo": "Grupo",
+    "origen": "West Coast",
+    "album_destacado": "Straight Outta Compton (1988/1990s era)",
+    "descripcion": "Los padres del Gangsta Rap. Agrupación que escandalizó y cambió la cultura de EE.UU. contando la cruda realidad de la brutalidad policial.",
+    "imagen": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=500&q=80"
+  },
+  {
+    "id": 9,
+    "nombre": "Cypress Hill",
+    "tipo": "Grupo",
+    "origen": "West Coast",
+    "album_destacado": "Black Sunday (1993)",
+    "descripcion": "Pioneros del rap latino en EE.UU., reconocidos por el tono nasal de B-Real, su fusión con sonidos psicodélicos y su inconfundible estética urbana.",
+    "imagen": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&q=80"
+  },
+  {
+    "id": 10,
+    "nombre": "Eminem",
+    "tipo": "Solista",
+    "origen": "Midwest (Detroit)",
+    "album_destacado": "The Slim Shady LP (1999)",
+    "descripcion": "Introdujo al mundo su alter ego Slim Shady a finales de la década, destacando por una agilidad mental y una velocidad lírica sin precedentes.",
+    "imagen": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=500&q=80"
+  },
+  {
+    "id": 11,
+    "nombre": "Mobb Deep",
+    "tipo": "Grupo",
+    "origen": "East Coast",
+    "album_destacado": "The Infamous (1995)",
+    "descripcion": "Dúo compuesto por Prodigy y Havoc. Definieron el sonido hardcore y melancólico del rap de Nueva York con himnos indispensables como Shook Ones Pt. II.",
+    "imagen": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=500&q=80"
+  },
+  {
+    "id": 12,
+    "nombre": "Lauryn Hill",
+    "tipo": "Solista",
+    "origen": "East Coast",
+    "album_destacado": "The Miseducation of Lauryn Hill (1998)",
+    "descripcion": "Hizo historia con una obra maestra que combinó perfectamente el rap político y el neo-soul, convirtiéndose en la primera mujer del género en ganar múltiples premios Grammy.",
+    "imagen": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=500&q=80"
+  }
+]
