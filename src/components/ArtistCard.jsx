@@ -4,13 +4,8 @@ function ArtistCard({ artista }) {
   return (
     <div className="carta-rapero">
       {artista.imagen && (
-        <img 
-          src={artista.imagen} 
-          alt={artista.nombre} 
-          className="imagen-rapero" 
-        />
+        <img src={artista.imagen} alt={artista.nombre} className="imagen-rapero" />
       )}
-      
       <div className="carta-contenido-texto">
         <div className="carta-header">
           <h3 className="nombre-rapero">{artista.nombre}</h3>

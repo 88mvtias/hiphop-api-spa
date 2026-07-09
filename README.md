@@ -1,18 +1,23 @@
-# React + Vite
+#  HipHop 90 Api - 90s Rap Single Page Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+SPA desarrollada con **React** y **Vite** para consultar información sobre la época dorada del Hip-Hop de los 90s y 2000s.
 
-Currently, two official plugins are available:
+##  Cumplimiento de Pauta
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. **React:** SPA creada bajo arquitectura moderna de React.
+2. **Componentes:** Dividido en `Header`, `ArtistList` y `ArtistCard`.
+3. **Consumo de API:** Petición asíncrona mediante `fetch`, `async` y `await` consumiendo `/data/raperos.json`.
+4. **Hooks Utilizados:**
+   - `useState`: Manejo del listado, filtros, preferencia de tema y nombre de usuario.
+   - `useEffect`: Carga inicial de datos de la API y sincronización con almacenes locales.
+   - `useMemo`: Filtrado eficiente en memoria según la categoría elegida (Solista / Grupo).
+5. **Persistencia (Puntos Extras):**
+   - **localStorage:** Almacena el nombre del usuario de forma persistente.
+   - **Cookies:** Almacena la preferencia del tema (oscuro/claro).
+6. **Git / Conventional Commits (Puntos Extras):** Historial de subidas con estándar de commits (`feat:`, `style:`, `docs:`).
 
-## React Compiler
+##  Instalación y Ejecución
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+npm install
+npm run dev

@@ -7,10 +7,12 @@ function App() {
   const [artistas, setArtistas] = useState([]);
   const [loading, setLoading] = useState(true);
   const [filtroTipo, setFiltroTipo] = useState('Todos');
-  
+  const [busqueda, setBusqueda] = useState(''); 
+
   const [usuario, setUsuario] = useState(() => {
     return localStorage.getItem('hiphop_username') || '';
   });
+
   const [tema, setTema] = useState(() => {
     return getCookie('hiphop_theme') || 'dark';
   });
@@ -24,7 +26,7 @@ function App() {
         const data = await response.json();
         setArtistas(data);
       } catch (error) {
-        console.error("Error cargando los datos de la API:", error);
+        console.error("Error cargando la API:", error);
       } finally {
         setLoading(false);
       }
@@ -39,18 +41,26 @@ function App() {
 
   useEffect(() => {
     setCookie('hiphop_theme', tema, 7);
-    document.body.className = tema; 
+    document.body.className = tema === 'dark' ? '' : 'light';
   }, [tema]);
 
-  const artistesFiltrados = useMemo(() => {
-    if (filtroTipo === 'Todos') return artistas;
-    return artistas.filter(artista => artista.tipo === filtroTipo);
-  }, [artistas, filtroTipo]);
+  const artistasFiltrados = useMemo(() => {
+    return artistas.filter((artista) => {
+      const coincideTipo = filtroTipo === 'Todos' || artista.tipo === filtroTipo;
+      const coincideNombre = artista.nombre
+        .toLowerCase()
+        .includes(busqueda.toLowerCase());
+
+      return coincideTipo && coincideNombre;
+    });
+  }, [artistas, filtroTipo, busqueda]);
 
   return (
     <div className="app-container">
       <div className="max-width-content">
         <Header 
+          busqueda={busqueda}
+          setBusqueda={setBusqueda}
           usuario={usuario} 
           setUsuario={setUsuario} 
           tema={tema} 
@@ -73,7 +83,7 @@ function App() {
           {loading ? (
             <p className="msg-estado">Cargando los clásicos del Hip-Hop...</p>
           ) : (
-            <ArtistList artistas={artistesFiltrados} />
+            <ArtistList artistas={artistasFiltrados} />
           )}
         </main>
       </div>
